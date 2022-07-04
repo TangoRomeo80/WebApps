@@ -5,6 +5,13 @@
 1200-1800: desktop(normal styles)
 1800-2400: large desktop
 */
+/* 
+-phone
+-tab-port
+-tab-land
+-desktop
+-big-desktop
+*/
 /*
 COLORS:
 
@@ -22,9 +29,18 @@ Dark green: #28b485
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 600px) {
+  @media (min-width: 56.25em) and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 37.5em) and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) and (max-width: 150em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -66,18 +82,18 @@ body {
   color: white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 60px; }
+  margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.74rem;
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
@@ -105,7 +121,7 @@ body {
   font-weight: 400;
   line-height: 1.8; }
   .paragraph:not(:last-child) {
-    margin-bottom: 30px; }
+    margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center !important; }
