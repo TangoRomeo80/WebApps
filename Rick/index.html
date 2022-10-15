@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="app.js"></script>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+      }
+      main {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        position: relative;
+      }
+      #eye,
+      #eyes img {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="rick.png" id="anchor" />
+      <div id="covers" style="position: absolute">
+        <div
+          class="cover"
+          style="
+            min-height: 30px;
+            min-width: 30px;
+            background-color: #fff;
+            width: auto;
+            margin-top: -40px;
+          "
+        ></div>
+        <div
+          class="cover"
+          style="
+            position: absolute;
+            min-height: 30px;
+            min-width: 30px;
+            background-color: #fff;
+            width: auto;
+            top: -20px;
+            bottom: 100px;
+            left: -80px;
+            right: 100px;
+          "
+        ></div>
+      </div>
+      <div id="eyes">
+        <img
+          class="eye"
+          src="eye.png"
+          style="
+            height: 40px;
+            width: auto;
+            top: 320px;
+            bottom: 0;
+            left: 760px;
+            right: 0;
+          "
+        />
+        <img
+          class="eye"
+          src="eye.png"
+          style="
+            height: 40px;
+            width: auto;
+            top: 335px;
+            bottom: 0;
+            left: 675px;
+            right: 0;
+          "
+        />
+      </div>
+    </main>
+  </body>
+</html>
